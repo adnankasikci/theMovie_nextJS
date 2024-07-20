@@ -30,7 +30,7 @@ const Header = () => {
 
 
     return (
-        <div className='flex items-center gap-7 h-20 p-5'>
+        <header className='flex flex-col md:flex-row items-center gap-4 md:gap-7 h-auto p-4 md:p-5 bg-white dark:bg-gray-900 shadow-md'>
             <div className='bg-indigo-600 rounded-lg p-3 text-2xl font-bold text-white dark:bg-indigo-950 '>MovieApp</div>
             <div className='flex items-center gap-2 border p-3 flex-1 rounded-lg'>
                 <input
@@ -49,7 +49,7 @@ const Header = () => {
                     <MenuItem mn={mn} key={i} />
                 ))
             }
-        </div>
+        </header>
     )
 }
 

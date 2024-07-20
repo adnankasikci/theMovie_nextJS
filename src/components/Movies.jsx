@@ -7,7 +7,7 @@ const Movies = ({ dt }) => {
     const router = useRouter();
 
     return (
-        <div onClick={() => router.push(`/movie/${dt?.id}`)} className='relative min-w-[300px] min-h-[300px] cursor-pointer text-white'>
+        <div onClick={() => router.push(`/movie/${dt?.id}`)} className='relative min-w-[50px] min-h-[300px] cursor-pointer text-white'>
             <Image
                 src={`https://image.tmdb.org/t/p/original/${dt?.backdrop_path || dt?.poster_path}`}
                 alt={dt?.title || "Movie Poster"}
