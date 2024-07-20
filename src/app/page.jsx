@@ -10,13 +10,13 @@ const Home = async ({ searchParams }) => {
   const data = await res.json();
 
   return (
-    <div className='grid grid-cols-4 gap-3 px-10 py-6'>
+    <di className='grid grid-cols-4 gap-3 px-10 py-6'>
       {
         data?.results?.map((dt, i) => (
           <Movies key={i} dt={dt} />
         ))
       }
-    </div>
+    </di>
   )
 }
 

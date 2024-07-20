@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import "./globals.css"
 import Head from './head'
 import Header from './../components/Header';
@@ -12,7 +12,9 @@ const Layout = ({ children }) => {
         <Provider>
           <Head />
           <Header />
-          <Tabs />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Tabs />
+          </Suspense>
           {children}
         </Provider>
       </body>
